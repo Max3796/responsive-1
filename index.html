@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon clone website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="nav-options-responsive">
+       <img id="cross-btn" width="40px" src="https://static.vecteezy.com/system/resources/previews/017/350/109/non_2x/red-cross-button-in-round-shape-png.png" alt="">
+      <p>All</p> 
+      <p>Best Sellers</p>
+      <p>Mobiles</p>
+      <p>Customer Service</p>
+      <p>Today's Deals</p>
+      <p>Fashion</p>
+      <p>Electronics</p>
+      <p>Books</p>
+      <p>Prime</p>
+      <p>New Releases</p>
+      <p>Home And Kitchen</p>
+      <p>Amazon Pay</p>
+    </div>
+    <nav id="first-navbar">
+      <img src="assets/logo.png" id="logo"  alt="" />
+      <div id="location">
+
+        <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAB5CAMAAAAqJH57AAAAaVBMVEUAAAD///8EBAT8/Pz5+fmtra3r6+v19fXo6OgwMDDb29uRkZHy8vLj4+OBgYFubm5bW1tgYGAoKCi7u7vJycmjo6M8PDxISEjBwcFSUlKKiooZGRk3Nzezs7MgICDU1NSampoPDw93d3cBAF9aAAAFFklEQVRoge1a2WKjIBSVxSUuMS6JtaZR+/8fOfdi2kbAaAQzL56HToYgR+BwN+I4O3bs2LFjxzag1KFy03uIxd+mPkZn13XP0bFu3sZ+OBYxI39gXnE8bEsJ6+w0x5YTFbw9NkOHjXDoAkEUh8U5SrMsS6NzEcaizeu2m3gfeYTB4rrpZdR+SV1PcEf9NsRVgptaptov0xK3Pqm2II5wWh/TQ1cf2CGyyklBOX0JCx2enKnjg62nEPqUjehvi9k54KDdbM8OZh0e7GmcOlfYYp7OmQv4NoUjl1ztmZUbEHv17HnFr2tQeXKzRey0QrVLJkLFCWhtEZ/BdFTLNg86VWBYXBu01MkI4ycdx8M/jzhxRjIbW32DnfvUDtTcGk0rdT5hjWxs9RfYj7Gq8XNzLNFcx6XwFGNmB2zKlyktdU6M+De5se+8XzfldUqocOOEnYzXu9RYxEsrKMM2FC/Qjh0IUEYW9J0x5o+HBfWCq2QfGTrFQ1aC7QiUI+cTlhkyFzjl8Sb3HiPB37gpvIfXS31g0oUZ8TUmvux04WWC/H6e8E8eqDSNT+KrEXOkWoWaMH8cfRx8Qmqpl2vqMEMU6RgguaPUdCSklJrgSIQmxDCbRFrsHDZZNiBNQFg+buoTwtfHZdT5Vncw1VkJsDZykARq+F59pCn6Cvnxs7rYFJf7LDV9Y9N65pawWnq8UNWEqpPWhjo1A2Oy3ox5xJM3axkzSASeXc3r9EwWGMXjIq+2ELcrTRAkRtaH3wf1tKDCZBLxOkoYDqdvvbgvwkGOkUNktOBUCVe5Pu6vNMwLLckWzBk4iMtfFAQfLuArVc9knZnipMPHtc1DnLJygIyYdQqjTg4OIql/yxZ1Ai4kV5mNFNbD7JQRITIAalIME6q+yBATK91Ck1OFlkTWLG4wJjuQ7kA0hO9Awqsm+s1NLMndemrQd/69RkKI32mnZmg9zxoLMSD/LAPOeVBGE5tp6DE0XvLnKyCvqurm6BNMauYlQdycJOuepgnxjSo2rRoNLcPJNOLWRIDLYBwBXn3i69K2OTQQLRtFvXSI9F+HiPTNEqsTJ/zVcir05mylPh4GAfPbvfxQp/UhL42BkRxjrx6PAyO8Nq9NucJhLR+FCjdlo1LSeGhCX2FOCfPWHAjNQGo+8wxNwF561WlmLIed5zv+4kxYa+N2AeMscIXLAxuMGy62Sp/LRWZPXgNui0U2qMJa3VPU1pKFnZOput1KtEstWWex3ipQ82WWLGecayO39XB1CYwE2/Iaxsy9+QIuFZmPktqZUi8SWcLsymtAK6qBkxYCv4mE9bKOGrKYJ7YJbV3MNJUMCyh0Oe0jPsxDoAmQZz5IOEe2BS2dFVkorNc2F8EhWrKpocF6GVU6nyJjGEXr86hrTLhpMX0SIvqeyvC2k5cATIzo42jIowxL6TOIpkSW2L561jGoxUdREdtOXgNOcGhvSvXxxtjELlhEgZV1mfnL+KpmFhTLCEqyhvd4h+1/RYP3b/TBVsHndnN5DQhGVnKwqsEbeEVcG+cP/8/j1xIvA+ryUWRCXobJ8mLmK3+0ZCAv/gZ5DRjckriXvDuwd6EJfxIJIa/QQrK8DIPIhvXt3yWvH3z8RPTuXHBmGxc+3BVUhLDLbG+ruGduizM9iwgY+cYq9Dus1yOGAtAleLO8BoAlixckmBugwh/+sU1++PcceA3KlMvRNyEm8f+gxRszd9nP1Tag3rFjx44dO96Af1pYMF1xTsrGAAAAAElFTkSuQmCC"
+          width="30px"
+          height="30px"
+          alt=""
+        />
+        <p>
+          Hello <br />
+          <strong>Select your address</strong>
+        </p>
+      </div>
+      <div id="input1">
+        <select name="" id="select">
+          <option value="All">All</option>
+        </select>
+        <input id="input-box1" type="text" />
+        <button id="search-btn">
+          <img src="assets/search icon.png" id="search-icon" alt="" />
+        </button>
+      </div>
+      <div id="cart-side">
+
+        <img src="assets/indian flag.png" height="20px" alt="" />
+        <p>
+          Hello,Sign in <br />
+          <strong>Accounts and Lists</strong>
+        </p>
+        <p>
+          Returns <br />
+          & Orders
+        </p>
+        <div id="cart">
+          <img src="assets/cart icon.png" alt="" />
+          <p>cart</p>
+        </div>
+
+      </div>
+    </nav>
+  
+    <nav id="second-navbar">
+      <div id="ham-burger">
+        <img class="menu-icon" src="assets/ham burger icon.png" height="20px" alt="" />
+        <div id="nav-options">
+
+          <p>All</p> 
+          <p>Best Sellers</p>
+          <p>Mobiles</p>
+          <p>Customer Service</p>
+          <p>Today's Deals</p>
+          <p>Fashion</p>
+          <p>Electronics</p>
+          <p>Books</p>
+          <p>Prime</p>
+          <p>New Releases</p>
+          <p>Home And Kitchen</p>
+          <p>Amazon Pay</p>
+        </div>
+      
+      </div>
+      <div id="prime-day">
+        <img class="lion-img"  src="assets/lion.png" alt="" />
+        <h3>
+          prime day <br />
+          <img class="prime-day" src="assets/amazon design.png" alt="" />
+        </h3>
+        <img id="right-arrow" src="assets/right arrow.png" alt="" />
+      </div>
+    </nav>
+   
+    <div id="bg-image">
+    <div id="product-container">
+
+      <div id="div1">
+        <h2>Upgrade Your Home | Amazons  <br>Brands And More </h2> <br> 
+        <div id="image-set1">
+          <img class="product-image" src="assets/image 17.png"alt="" />
+          <img class="product-image" src="assets/image 18.png" alt="" />
+        </div>
+        <div id="image-set2">
+          <img class="product-image" src="assets/image 19.png" alt="" />
+          <img class="product-image" src="assets/image 20.png" alt="" />
+        </div>
+      </div>
+      <div id="div2">
+        <h2>Revamp Your Home In Style</h2> <br> <br>
+        <div id="image-set3">
+          <img class="product-image" src="assets/image 21.png"  alt="" />
+          <img class="product-image" src="assets/image 22.png"  alt="" />
+        </div>
+        <div id="image-set4">
+          <img class="product-image" src="assets/image 24.png"  alt="" />
+          <img class="product-image" src="assets/image 25.png"  alt="" />
+        </div>
+      </div>
+      <div id="div3">
+        <h2> upto 70% off Clearance Store</h2><br><br>
+        <div id="image-set5">
+          <img class="ad-image" src="assets/image 26.png"  alt="" />
+        </div>
+        <div id="image-set6"></div>
+      </div>
+      <div id="div4">
+        <div id="div5">
+          <h2>
+            Sing In For Your Best <br />
+            Expereince
+          </h2>
+          <br />
+          <input id="email" type="email" placeholder="Sign in Securely" />
+        </div>
+        <div id="div6">
+          <img class="ad-image" src="assets/image 28.png"  alt="" />
+        </div>
+      </div>
+      <br />
+      <div id="responsive-nav">
+         <div id="cart">
+           <img src="assets/cart icon.png" alt="" />
+           <p>cart</p>
+         </div>
+         <div>
+           <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAB5CAMAAAAqJH57AAAAaVBMVEUAAAD///8EBAT8/Pz5+fmtra3r6+v19fXo6OgwMDDb29uRkZHy8vLj4+OBgYFubm5bW1tgYGAoKCi7u7vJycmjo6M8PDxISEjBwcFSUlKKiooZGRk3Nzezs7MgICDU1NSampoPDw93d3cBAF9aAAAFFklEQVRoge1a2WKjIBSVxSUuMS6JtaZR+/8fOfdi2kbAaAQzL56HToYgR+BwN+I4O3bs2LFjxzag1KFy03uIxd+mPkZn13XP0bFu3sZ+OBYxI39gXnE8bEsJ6+w0x5YTFbw9NkOHjXDoAkEUh8U5SrMsS6NzEcaizeu2m3gfeYTB4rrpZdR+SV1PcEf9NsRVgptaptov0xK3Pqm2II5wWh/TQ1cf2CGyyklBOX0JCx2enKnjg62nEPqUjehvi9k54KDdbM8OZh0e7GmcOlfYYp7OmQv4NoUjl1ztmZUbEHv17HnFr2tQeXKzRey0QrVLJkLFCWhtEZ/BdFTLNg86VWBYXBu01MkI4ycdx8M/jzhxRjIbW32DnfvUDtTcGk0rdT5hjWxs9RfYj7Gq8XNzLNFcx6XwFGNmB2zKlyktdU6M+De5se+8XzfldUqocOOEnYzXu9RYxEsrKMM2FC/Qjh0IUEYW9J0x5o+HBfWCq2QfGTrFQ1aC7QiUI+cTlhkyFzjl8Sb3HiPB37gpvIfXS31g0oUZ8TUmvux04WWC/H6e8E8eqDSNT+KrEXOkWoWaMH8cfRx8Qmqpl2vqMEMU6RgguaPUdCSklJrgSIQmxDCbRFrsHDZZNiBNQFg+buoTwtfHZdT5Vncw1VkJsDZykARq+F59pCn6Cvnxs7rYFJf7LDV9Y9N65pawWnq8UNWEqpPWhjo1A2Oy3ox5xJM3axkzSASeXc3r9EwWGMXjIq+2ELcrTRAkRtaH3wf1tKDCZBLxOkoYDqdvvbgvwkGOkUNktOBUCVe5Pu6vNMwLLckWzBk4iMtfFAQfLuArVc9knZnipMPHtc1DnLJygIyYdQqjTg4OIql/yxZ1Ai4kV5mNFNbD7JQRITIAalIME6q+yBATK91Ck1OFlkTWLG4wJjuQ7kA0hO9Awqsm+s1NLMndemrQd/69RkKI32mnZmg9zxoLMSD/LAPOeVBGE5tp6DE0XvLnKyCvqurm6BNMauYlQdycJOuepgnxjSo2rRoNLcPJNOLWRIDLYBwBXn3i69K2OTQQLRtFvXSI9F+HiPTNEqsTJ/zVcir05mylPh4GAfPbvfxQp/UhL42BkRxjrx6PAyO8Nq9NucJhLR+FCjdlo1LSeGhCX2FOCfPWHAjNQGo+8wxNwF561WlmLIed5zv+4kxYa+N2AeMscIXLAxuMGy62Sp/LRWZPXgNui0U2qMJa3VPU1pKFnZOput1KtEstWWex3ipQ82WWLGecayO39XB1CYwE2/Iaxsy9+QIuFZmPktqZUi8SWcLsymtAK6qBkxYCv4mE9bKOGrKYJ7YJbV3MNJUMCyh0Oe0jPsxDoAmQZz5IOEe2BS2dFVkorNc2F8EhWrKpocF6GVU6nyJjGEXr86hrTLhpMX0SIvqeyvC2k5cATIzo42jIowxL6TOIpkSW2L561jGoxUdREdtOXgNOcGhvSvXxxtjELlhEgZV1mfnL+KpmFhTLCEqyhvd4h+1/RYP3b/TBVsHndnN5DQhGVnKwqsEbeEVcG+cP/8/j1xIvA+ryUWRCXobJ8mLmK3+0ZCAv/gZ5DRjckriXvDuwd6EJfxIJIa/QQrK8DIPIhvXt3yWvH3z8RPTuXHBmGxc+3BVUhLDLbG+ruGduizM9iwgY+cYq9Dus1yOGAtAleLO8BoAlixckmBugwh/+sU1++PcceA3KlMvRNyEm8f+gxRszd9nP1Tag3rFjx44dO96Af1pYMF1xTsrGAAAAAElFTkSuQmCC"
+            width="30px"
+            height="30px"
+            alt=""
+          />
+
+         </div>
+       </div>
+    </div>
+    </div>
+
+  </body>
+</html>
+
+<script>
+document.querySelector(".menu-icon").addEventListener("click",showSidebar);
+document.querySelector("#cross-btn").addEventListener("click",hideSidebar);
+
+let sideBar=document.getElementById("nav-options-responsive")
+
+function showSidebar(){
+    sideBar.style.display="flex"
+}
+
+function hideSidebar(){
+    sideBar.style.display="none"
+}
+
+</script>
